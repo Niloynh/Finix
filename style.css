@@ -18,6 +18,9 @@ img{
 .slider-section .container{
     max-width:1480px;
 }
+.main-header{
+    background: #fff;
+}
 body .btn-primary{
     background-color: #e73a3e !important;
     border-color: #e73a3e;
@@ -61,6 +64,7 @@ ul.our-primary-menu li a{
     padding: 10px 20px;
     color: #111;
     font-weight: 600;
+    font-size: 18px;
     transition: .3s ease-in-out;
     
 }
@@ -98,8 +102,7 @@ ul.our-primary-menu li:hover ul{
     top: 120%;
 
 }
-ul.our-primary-menu li ul li a{}
-
+ul.our-primary-menu li ul li{}
 
 
 .header-info{}
@@ -357,3 +360,81 @@ ul.our-primary-menu li ul li a{}
         opacity: 0;
     }
 }
+
+/****  APPLY NOW SECTION  ****/
+.apply-now-section{}
+.apply-now-left-text{
+    margin-top: 60px;
+}
+
+.step-timeline{}
+.step-timeline ul{
+    list-style: none;
+    position: relative;
+    padding-left: 60px;
+}
+.step-timeline ul::before{
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    width: 1px;
+    background: #e73c3e;
+    height: calc(100% - 100px);
+}
+.step-timeline ul li{
+    margin-bottom: 25px;
+    position: relative;
+}
+.step-timeline ul li::before{
+    content: attr(data-container);
+    position: absolute;
+    left: -65px;
+    top: 0;
+    height: 40px;
+    width:  40px;
+    background: #F9FAFB;
+    border: 1px solid #e73c3e;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+
+}
+.step-timeline ul li strong{
+    color: #111;
+    font-size: 25px;
+    display: block;
+    margin-bottom: 10px;
+    
+}
+.step-timeline ul li p{
+    color: #606060;
+}
+
+.calculate-rate{
+    background-color: #fdebeb;
+    padding: 50px;
+}
+.calculate-rate .finix-text{}
+.calculate-rate .finix-text h6{
+    color: #606060;
+}
+
+.calculate-form .form-group{
+    margin-bottom: 20px;
+}
+.calculate-form .form-group label{
+    display: block;
+    margin-bottom: 10px;
+}
+.calculate-form .form-group input{
+    border: none;
+    border-radius: 0;
+    padding: 14px 15px;
+}
+.calculate-form .form-group Select{
+    border: none;
+    border-radius: 0;
+    height: 53px;
+}
+
