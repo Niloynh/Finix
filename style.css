@@ -92,6 +92,7 @@ ul.our-primary-menu li ul{
     overflow: hidden;
     transition: .4s ease-in-out;
     
+    
 }
 ul.our-primary-menu li ul li{
     flex-direction: column;
@@ -100,6 +101,7 @@ ul.our-primary-menu li:hover ul{
     opacity: 1;
     overflow: visible;
     top: 120%;
+    
 
 }
 ul.our-primary-menu li ul li{}
@@ -492,4 +494,75 @@ ul.our-primary-menu li ul li{}
 }
 .our-company-img{
     margin-top: 35px;
+}
+
+/****  SERVICES SECTION  ****/
+
+.services-tab-item{
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 40px !important;
+}
+.services-tab-item li{
+    flex: 1 1 auto;
+}
+.services-tab-item li a.active span i{
+    color: #e73a3e;
+}
+.services-tab-item li a.active{
+    position: relative;
+}
+.services-tab-item li a.active::after{
+     content: "";
+     position: absolute;
+     top: 161px;
+     left: 10px;
+     height: 1px;
+     width: 100%;
+     background: #e73c3e;
+     border: 1px solid #e73c3e;
+     border-radius: 50%;
+}
+.services-tab-item li a span i{
+    background: #fff;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    line-height: 80px;
+    font-size: 30px;
+    color: #666;
+    margin-bottom: 15px;
+}
+.services-tab-item li a strong{
+    color: #111;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.services-tab-content-text{}
+.services-tab-content-text h3{
+    font-size: 25px;
+    margin-bottom: 14px;
+    font-weight: 500;
+}
+.services-tab-content-text p{
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #606060;
+    font-weight: 500;
+    font-size: 16px;
+}
+.services-tab-content-text ul{
+    list-style: none;
+    padding-left: 0;
+}
+.services-tab-content-text ul li::before{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #e73c3e;
+    border-radius: 50%;
+    margin-right: 12px;
+    
 }
