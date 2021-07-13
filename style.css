@@ -91,16 +91,19 @@ ul.our-primary-menu li ul{
     opacity: 0;
     overflow: hidden;
     transition: .4s ease-in-out;
+
+   
     
     
 }
 ul.our-primary-menu li ul li{
     flex-direction: column;
 }
-ul.our-primary-menu li:hover ul{
+ul.our-primary-menu li:hover ul {
     opacity: 1;
     overflow: visible;
     top: 120%;
+
     
 
 }
@@ -565,4 +568,93 @@ ul.our-primary-menu li ul li{}
     border-radius: 50%;
     margin-right: 12px;
     
+}
+
+/****  TESTIMONIAL SECTION  ****/
+.testimonial-section{}
+.testimonial-content{}
+.testimonial-content p{
+    font-size: 23px;
+}
+.client-details{}
+.client-details h5{
+    color: #e73c3e;
+    margin-bottom: 0;
+}
+.client-details p{}
+.testimonial-image{}
+.testimonial-image img{}
+
+/****  TEAM MEMBER SECTION  ****/ 
+.team-member{}
+.member-image{
+    position: relative;
+}
+.member-image img{
+    width: 100%;
+    height: auto;
+}
+.member-social-profile{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.member-social-profile ul{
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 25px;
+}
+.member-social-profile ul li{
+    display: inline-block;
+
+    transition: .5s ease-in-out; 
+    transform: translateY(45px);
+    opacity: 0;
+    visibility: hidden;
+}
+.team-member:hover .member-social-profile ul li{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.team-member .member-social-profile ul li:nth-child(1){
+    transition-delay: .2s;
+}
+.team-member .member-social-profile ul li:nth-child(2){
+    transition-delay: .3s;
+}
+.team-member .member-social-profile ul li:nth-child(3){
+    transition-delay: .4s;
+}
+.team-member .member-social-profile ul li:nth-child(4){
+    transition-delay: .5s;
+}
+.member-social-profile ul li a{
+    display: block;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    background: #fff;
+    border-radius: 50%;
+    line-height: 40px;
+    color: #111;
+    transition: .4s;
+}
+.member-social-profile ul li a:hover{
+    color: #fff;
+    background-color: #e73c3e;
+}
+.member-content{
+    margin-top: 28px;
+}
+.member-content h4{
+    color: #e73c3e;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.member-content p{
+    color: #666;
 }
